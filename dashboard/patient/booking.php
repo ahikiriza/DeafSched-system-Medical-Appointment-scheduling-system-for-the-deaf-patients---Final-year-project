@@ -250,7 +250,7 @@
                                                             Session Title: '.$title.'<br>
                                                             Session Scheduled Date: '.$scheduledate.'<br>
                                                             Session Starts : '.$scheduletime.'<br>
-                                                            Channeling fee : <b>LKR.2 000.00</b>
+                                                            Channeling fee : <b>UGX. 10,000</b>
 
                                                         </div>
                                                         <br>

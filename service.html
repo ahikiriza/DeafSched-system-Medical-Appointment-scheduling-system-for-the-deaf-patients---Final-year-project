@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Mulago Appointment System</title>
+    <title>DeafSched</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -38,16 +38,16 @@
         <div class="row gx-0">
             <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center">
-                    <small class="py-2"><i class="far fa-clock text-primary me-2"></i>Opening Hours: Mon - Tues : 6.00 am - 10.00 pm, Sunday Closed </small>
+                    <small class="py-2"><i class="far fa-clock text-primary me-2"></i>Opening Hours: Mon - Sat : 8.00 am - 10.00 pm | Sunday : 10 am - 4 pm </small>
                 </div>
             </div>
             <div class="col-md-6 text-center text-lg-end">
                 <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
                     <div class="me-3 pe-3 border-end py-2">
-                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i>info@example.com</p>
+                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i><a href="mailto:admin@mulagohospital.go.ug" style="color: white;">admin@mulagohospital.go.ug</a></p>
                     </div>
                     <div class="py-2">
-                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</p>
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+256-414-554008/1</p>
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
         <a href="index.html" class="navbar-brand p-0">
-            <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>DeafSched</h1>
+            <h1 class="m-0 text-primary"><i class="fa fa-deaf"></i>DeafSched</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -69,9 +69,9 @@
                 <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <a href="service.html" class="nav-item nav-link active">Service</a>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="contact.php" class="nav-item nav-link">Contact</a>
             </div>
-            <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
+            <!-- <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button> -->
             <a href="dashboard/login.php" class="btn btn-primary py-2 px-4 ms-3">Appointment</a>
         </div>
     </nav>
@@ -102,7 +102,7 @@
         <div class="row py-3">
             <div class="col-12 text-center">
                 <h1 class="display-3 text-white animated zoomIn">Services</h1>
-                <a href="" class="h4 text-white">Home</a>
+                <a href="index.html" class="h4 text-white">Home</a>
                 <i class="far fa-circle text-white px-2"></i>
                 <a href="" class="h4 text-white">Services</a>
             </div>
@@ -116,31 +116,35 @@
         <div class="container">
             <div class="row g-5 mb-5">
                 <div class="col-lg-5 wow zoomIn" data-wow-delay="0.3s" style="min-height: 400px;">
-                    <div class="twentytwenty-container position-relative h-100 rounded overflow-hidden">
-                        <img class="position-absolute w-100 h-100" src="img/before.jpg" style="object-fit: cover;">
-                        <img class="position-absolute w-100 h-100" src="img/after.jpg" style="object-fit: cover;">
+                    <!-- <div class="twentytwenty-container position-relative h-100 rounded overflow-hidden"> -->
+                    <div class="position-relative h-100 rounded overflow-hidden">
+                        <img class="position-absolute w-100 h-100" src="img/before1.jpg" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100" src="img/before1.jpg" style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-7">
                     <div class="section-title mb-5">
                         <h5 class="position-relative d-inline-block text-primary text-uppercase">Our Services</h5>
-                        <h1 class="display-5 mb-0">We Offer The Best Quality Dental Services</h1>
+                        <h1 class="display-5 mb-0">We Offer The Best Quality services and consultation to the Deaf patients</h1>
                     </div>
                     <div class="row g-5">
                         <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
                             <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-1.jpg" alt="">
+                                <img class="img-fluid" src="img/service1.jpg" alt="">
                             </div>
                             <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Cosmetic Dentistry</h5>
+                                <h5 class="m-0">Ortolaryngology</h5>
+                                <p>Ortolaryngologists with in this section can diagnose and treat hearing loss, ear infections, and other infections related to the ear, nose and throat.</p>
+                                
                             </div>
                         </div>
                         <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.9s">
                             <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-2.jpg" alt="">
+                                <img class="img-fluid" src="img/service2.jpg" alt="">
                             </div>
                             <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Dental Implants</h5>
+                                <h5 class="m-0">Audiology</h5>
+                                <p>This service involves performing hearing tests and assessing hearing loss. Also Audiologists provide hearing aids or other assistive devices </p>
                             </div>
                         </div>
                     </div>
@@ -151,26 +155,29 @@
                     <div class="row g-5">
                         <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.3s">
                             <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-3.jpg" alt="">
+                                <img class="img-fluid" src="img/before1.jpg" alt="">
                             </div>
                             <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Dental Bridges</h5>
+                                <h5 class="m-0">Speech Therapy</h5>
+                                <p>This service is provided to the deaf patients who want to improve their communication skills. Speech therapists can provide instruction on lip-reading, speechreading and other communication strategies</p>
                             </div>
                         </div>
                         <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
                             <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-4.jpg" alt="">
+                                <img class="img-fluid" src="img/service3.jpg" alt="">
                             </div>
                             <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Teeth Whitening</h5>
+                                <h5 class="m-0">Mental Health Services</h5>
+                                <p>This service aims at dealing with deaf patients who may be experiencing mental health issues such as depression, anxiety, or social isolation. </p>
                             </div>
                         </div>
+                                           
                     </div>
                 </div>
                 <div class="col-lg-5 service-item wow zoomIn" data-wow-delay="0.9s">
                     <div class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-4">
                         <h3 class="text-white mb-3">Make Appointment</h3>
-                        <p class="text-white mb-3">Clita ipsum magna kasd rebum at ipsum amet dolor justo dolor est magna stet eirmod</p>
+                        <p class="text-white mb-3">login into the system and make appointment with us. For more information, visit contact page or call us on</p>
                         <h2 class="text-white mb-0">+012 345 6789</h2>
                     </div>
                 </div>
@@ -198,28 +205,26 @@
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-white mb-4">Quick Links</h3>
                     <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                        <a class="text-light mb-2" href="http://localhost/deafsched/index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="http://localhost/deafsched/about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="http://localhost/deafsched/service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                        <a class="text-light" href="http://localhost/deafsched/contact.php"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Popular Links</h3>
+                    <h3 class="text-white mb-4">Important Links</h3>
                     <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                        <a class="text-light mb-2" href="http://localhost/deafsched/dashboard/login.php"><i class="bi bi-arrow-right text-primary me-2"></i>Appointment</a>
+                        <a class="text-light mb-2" href="https://mulagohospital.go.ug/"><i class="bi bi-arrow-right text-primary me-2"></i>Mulago Hospital</a>
+                        <a class="text-light mb-2" href="https://www.nad.org/"><i class="bi bi-arrow-right text-primary me-2"></i>Deaf Community</a>
+                        <a class="text-light" href="https://schoolnetuganda.com/"><i class="bi bi-arrow-right text-primary me-2"></i>Deaf Schools</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-white mb-4">Get In Touch</h3>
-                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>info@example.com</p>
-                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Mulago Hill, P.O.Box 7051, Kampala Uganda</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i><a href="mailto:admin@mulagohospital.go.ug" style="color: white;">admin@mulagohospital.go.ug</a></p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+256-414-554008/1</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-white mb-4">Follow Us</h3>
@@ -237,15 +242,13 @@
         <div class="container">
             <div class="row g-0">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="#">Your Site Name</a>. All Rights Reserved.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0">Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a></p>
-                </div>
+                    <p class="mb-md-0">&copy; 2023 DeafSched | Mulago Hospital | All Rights Reserved</p>
+                </div>              
             </div>
         </div>
     </div>
     <!-- Footer End -->
+
 
 
     <!-- Back to Top -->

@@ -18,9 +18,6 @@
 <body>
 <?php
 
-//learn from w3schools.com
-//Unset all the server side variables
-
 session_start();
 
 $_SESSION["user"]="";
@@ -61,10 +58,9 @@ if($_POST){
             $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">Already have an account for this Email address.</label>';
         }else{
             
-            $database->query("insert into patient(pemail,pname,ppassword, paddress, pnic,pdob,ptel) values('$email','$name','$newpassword','$address','$nic','$dob','$tele');");
+            $database->query("insert into patient(pemail,pname,ppassword, paddress, pnic,pdob,ptel) values('$email','$name','".md5($newpassword)."','$address','$nic','$dob','$tele');");
             $database->query("insert into webuser values('$email','p')");
 
-            //print_r("insert into patient values($pid,'$email','$fname','$lname','$newpassword','$address','$nic','$dob','$tele');");
             $_SESSION["user"]=$email;
             $_SESSION["usertype"]="p";
             $_SESSION["username"]=$fname;
@@ -94,7 +90,7 @@ if($_POST){
             <tr>
                 <td colspan="2">
                     <p class="header-text">Let's Get Started</p>
-                    <p class="sub-text">It's Okey, Now Create User Account.</p>
+                    <p class="sub-text">It's Okay, Now Create User Account.</p>
                 </td>
             </tr>
             <tr>
@@ -116,7 +112,7 @@ if($_POST){
             </tr>
             <tr>
                 <td class="label-td" colspan="2">
-                    <input type="tel" name="tele" class="input-text"  placeholder="ex: 0712345678" pattern="[0]{1}[0-9]{9}" >
+                    <input type="tel" name="tele" class="input-text"  placeholder="0788888888" pattern="[0]{1}[0-9]{9}" >
                 </td>
             </tr>
             <tr>
@@ -131,12 +127,12 @@ if($_POST){
             </tr>
             <tr>
                 <td class="label-td" colspan="2">
-                    <label for="cpassword" class="form-label">Conform Password: </label>
+                    <label for="cpassword" class="form-label">Confirm Password: </label>
                 </td>
             </tr>
             <tr>
                 <td class="label-td" colspan="2">
-                    <input type="password" name="cpassword" class="input-text" placeholder="Conform Password" required>
+                    <input type="password" name="cpassword" class="input-text" placeholder="Confirm Password" required>
                 </td>
             </tr>
      

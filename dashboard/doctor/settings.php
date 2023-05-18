@@ -28,7 +28,6 @@
 <body>
     <?php
 
-    //learn from w3schools.com
 
     session_start();
 
@@ -283,7 +282,7 @@
                         <h2></h2>
                         <a class="close" href="settings.php">&times;</a>
                         <div class="content">
-                            eDoc Web App<br>
+                            DeafSched Web App<br>
                             
                         </div>
                         <div style="display: flex;justify-content: center;">
@@ -493,12 +492,12 @@
                                         </td>
                                     </tr><tr>
                                         <td class="label-td" colspan="2">
-                                            <label for="cpassword" class="form-label">Conform Password: </label>
+                                            <label for="cpassword" class="form-label">Confirm Password: </label>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="label-td" colspan="2">
-                                            <input type="password" name="cpassword" class="input-text" placeholder="Conform Password" required><br>
+                                            <input type="password" name="cpassword" class="input-text" placeholder="Confirm Password" required><br>
                                         </td>
                                     </tr>
                                     

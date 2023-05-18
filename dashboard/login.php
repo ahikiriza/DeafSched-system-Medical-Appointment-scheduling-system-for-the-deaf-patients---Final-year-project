@@ -16,7 +16,6 @@
 <body>
     <?php
 
-    //learn from w3schools.com
     //Unset all the server side variables
 
     session_start();
@@ -49,7 +48,7 @@
         if($result->num_rows==1){
             $utype=$result->fetch_assoc()['usertype'];
             if ($utype=='p'){
-                $checker = $database->query("select * from patient where pemail='$email' and ppassword='$password'");
+                $checker = $database->query("select * from patient where pemail='$email' and ppassword='".md5($password)."'");
                 if ($checker->num_rows==1){
 
 
@@ -80,7 +79,7 @@
 
 
             }elseif($utype=='d'){
-                $checker = $database->query("select * from doctor where docemail='$email' and docpassword='$password'");
+                $checker = $database->query("select * from doctor where docemail='$email' and docpassword='".md5($password)."'");
                 if ($checker->num_rows==1){
 
 
@@ -96,7 +95,7 @@
             }
             
         }else{
-            $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">We cant found any acount for this email.</label>';
+            $error='<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">We can\'t find any account for this email.</label>';
         }
 
 
@@ -170,6 +169,7 @@
                     <br>
                     <label for="" class="sub-text" style="font-weight: 280;">Don't have an account&#63; </label>
                     <a href="signup.php" class="hover-link1 non-style-link">Sign Up</a>
+                    <a href="http://localhost/deafsched/" class="hover-link2 non-style-link">Go Back Home</a>
                     <br><br><br>
                 </td>
             </tr>

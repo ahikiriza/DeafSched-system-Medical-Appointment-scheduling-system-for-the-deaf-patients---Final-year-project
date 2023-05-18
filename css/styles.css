@@ -1,0 +1,20 @@
+/* styles.css */
+
+body {
+    font-size: 16px;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+#content {
+    margin-bottom: 20px;
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+.high-contrast {
+    color: #ffffff;
+    background-color: #000000cb;
+}
